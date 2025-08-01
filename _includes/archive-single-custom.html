@@ -1,0 +1,29 @@
+{% include base_path %}
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 2.5em; border-bottom: 1px solid #f2f2f2; padding-bottom: 1.5em;">
+
+    <!-- 左侧图片 -->
+    <div style="flex: 0 0 40%; margin-right: 2em;">
+        {% if post.header.teaser %}
+        <img src="{{ post.header.teaser | relative_url }}" alt="project teaser">
+        {% endif %}
+    </div>
+
+    <!-- 右侧文字 -->
+    <div style="flex: 1;">
+        <h3 style="margin-top: 0;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p><i>{{ post.venue }}</i></p> <!-- 用 venue 字段来存放项目背景/奖项 -->
+        <p>{{ post.excerpt }}</p>
+        <p>
+            {% if post.paperurl %}
+            <a href="{{ post.paperurl }}">Report</a> |
+            {% endif %}
+            {% if post.codeurl %}
+            <a href="{{ post.codeurl }}">Code</a> |
+            {% endif %}
+            {% if post.projectpage %}
+            <a href="{{ post.projectpage }}">Project Page</a>
+            {% endif %}
+        </p>
+    </div>
+</div>

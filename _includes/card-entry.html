@@ -1,0 +1,48 @@
+{% include base_path %}
+
+<div class="card-entry" style="display: flex; align-items: flex-start; margin-bottom: 2.5em;">
+
+    <!-- 左侧图片/GIF -->
+    <div class="card-teaser" style="flex: 0 0 55%; margin-right: 2em; text-align: center;">
+        {% if post.header.teaser %}
+        <img src="{{ post.header.teaser | relative_url }}" alt="card teaser" style="border-radius: 8px;">
+        {% endif %}
+    </div>
+
+    <!-- 右侧文字 -->
+    <div class="card-details" style="flex: 1;">
+
+        <h3 class="card-title" style="margin-top: 0; margin-bottom: 0.25em;">{{ post.title }}</h3>
+
+        <!-- 作者/成员/时间线 -->
+        <div class="card-authors">{{ post.content }}</div>
+
+        <!-- 会议/导师/背景信息 -->
+        <div class="card-venue"><i>{{ post.venue }}</i></div>
+
+        {% if post.paperurl or post.codeurl or post.projectpage %}
+        <div class="card-links">
+            (
+            {% assign has_prev_link = false %}
+            {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank">paper</a>
+            {% assign has_prev_link = true %}
+            {% endif %}
+            {% if post.codeurl %}
+            {% if has_prev_link %}, {% endif %}
+            <a href="{{ post.codeurl }}" target="_blank">code</a>
+            {% assign has_prev_link = true %}
+            {% endif %}
+            {% if post.projectpage %}
+            {% if has_prev_link %}, {% endif %}
+            <a href="{{ post.projectpage }}" target="_blank">website</a>
+            {% assign has_prev_link = true %}
+            {% endif %}
+            )
+        </div>
+        {% endif %}
+
+        <!-- 摘要/描述 -->
+        <div class="card-excerpt">{{ post.excerpt }}</div>
+    </div>
+</div>
