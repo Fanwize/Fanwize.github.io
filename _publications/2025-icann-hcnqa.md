@@ -11,4 +11,4 @@ header:
   teaser: "/images/hcnqa-teaser.gif" # 你的核心图路径！
 ---
 
-Jianuo Zhu, Zhaohui Li, **Qilin Huang**, Feng Zheng
+Jianuo Zhu, Zhousheng Li, **Qilin Huang**, Feng Zheng
