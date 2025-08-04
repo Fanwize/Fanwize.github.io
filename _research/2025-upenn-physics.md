@@ -1,7 +1,7 @@
 ---
-title: "3D Physics-informed Learning for Scene and Object Interaction"
+title: "Learning Variational Physical Representations from Visual Features"
 collection: research
-excerpt: "Upcoming research on integrating physical principles into 3D deep learning models to enable more realistic and predictive understanding of object interactions and dynamics."
+excerpt: "Upcoming research on more variable and expressive latent representations of physical properties, moving beyond deterministic point estimates to better capture material uncertainty inherent in visual data."
 header:
   teaser: "/images/upenn-research-teaser.gif" # 你的概念图或占位图
 venue: "<b>[Upcoming]</b> Visiting Researcher @ GRASP Lab, UPenn (Fall 2025)"
