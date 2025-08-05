@@ -8,7 +8,7 @@ venue: "International Conference on Artificial Neural Networks (ICANN), 2025"
 paperurl: 'https://arxiv.org/abs/2507.01800'
 codeurl: 'https://github.com/JianuoZhu/HCNQA'
 header:
-  teaser: "/images/hcnqa-teaser.gif" # 你的核心图路径！
+  teaser: "/images/hcnqa-teaser.gif"
 ---
 
-Jianuo Zhu, Zhousheng Li, **Qilin Huang**, Feng Zheng
+Shengli Zhou, Jianuo Zhu, **Qilin Huang**, Fangjing Wang, Yanfu Zhang, Feng Zheng
