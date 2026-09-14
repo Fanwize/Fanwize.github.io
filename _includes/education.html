@@ -1,0 +1,9 @@
+{% for school in site.data.education %}
+<div class="education-entry">
+  <div class="education-heading"><h3>{{ school.institution }}</h3><span>{{ school.graduation }}</span></div>
+  <p>{{ school.degree }}</p>
+  {% if include.locations %}<p>{{ school.location }}</p>{% endif %}
+  {% if school.academic_record %}<p>{{ school.academic_record }}</p>{% endif %}
+  <p><strong>{{ school.coursework_label }}:</strong> {{ school.coursework | join: '; ' }}.</p>
+</div>
+{% endfor %}

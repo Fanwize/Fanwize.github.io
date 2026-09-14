@@ -1,74 +1,47 @@
 ---
 permalink: /
-title: ""
-author_profile: true
+layout: career
+home: true
+description: "Qilin Huang, CMU Computer Vision master's student. Controllable 3D physics and 3D visual question answering. Seeking Summer 2027 CV/ML internships."
 redirect_from:
   - /about/
   - /about.html
-layout: single
-classes: wide
 ---
+<section class="profile" aria-labelledby="profile-title">
+  <h1 id="profile-title">{{ site.name }}</h1>
+  <p class="profile-affiliation">{{ site.career.degree }} · {{ site.career.institution }}</p>
+  <p class="profile-graduation">Expected graduation: {{ site.career.graduation }} · {{ site.author.location }}</p>
+  <p class="profile-intro">I am a master's student in Computer Vision at Carnegie Mellon University. My research includes controllable 3D physics and 3D visual question answering. I am a co-first author of <a href="#unipixie-title">UniPixie</a> (CVPR 2026 Highlight) and a co-author of <a href="#hcnqa-title">HCNQA</a> (ICANN 2025).</p>
+  <p class="internship-target">{{ site.career.target }}</p>
+  <div class="profile-links">
+    {% include resume-link.html primary=true %}
+    <a href="mailto:{{ site.author.email }}">Email</a>
+    <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+  </div>
+</section>
 
-<!-- ====================================================================== -->
-<!--                                 NEWS                                   -->
-<!-- ====================================================================== -->
-## News
-<div class="news-entry">
-  <span class="news-date">[Aug 2025]</span> I am thrilled to be joining the <a href="https://www.grasp.upenn.edu/" target="_blank">GRASP Laboratory</a> at the <b>University of Pennsylvania</b> as a visiting research student for the Fall 2025 semester.
-  <br>
-  I will be working on a project in 3D Physics under the supervision of <a href="https://lingjie0206.github.io/" target="_blank">Prof. Lingjie Liu</a>, and will be directly collaborating with Ph.D. student <a href="https://vlongle.github.io/" target="_blank">Long Le</a>.
-</div>
+<section id="research" class="career-section" aria-labelledby="research-title">
+  <span id="publications" class="anchor-alias" aria-hidden="true"></span>
+  <h2 id="research-title">Selected Research</h2>
+  {% assign selected = site.publications | where: 'selected', true | sort: 'selected_order' %}
+  {% for work in selected %}{% include research-entry.html work=work %}{% endfor %}
+  <p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications</a> · <a href="{{ '/projects/earlier/' | relative_url }}">Earlier projects</a></p>
+</section>
 
----
+{% if site.career.skills.size > 0 %}
+<section class="career-section" aria-labelledby="skills-title">
+  <h2 id="skills-title">Technical Skills</h2>
+  {% include technical-skills.html %}
+</section>
+{% endif %}
 
-<!-- ====================================================================== -->
-<!--                               ABOUT ME                                 -->
-<!-- ====================================================================== -->
-## About Me
-I am a final-year undergraduate student in Computer Science at the Southern University of Science and Technology (SUSTech), currently advised by **[Prof. Feng Zheng](https://faculty.sustech.edu.cn/zhengf/)**.
+<section id="education" class="career-section" aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  {% include education.html %}
+</section>
 
-My research goal is to enable machines to perceive, reason about, and interact with the 3D world as humans do. I am actively seeking a Ph.D. position for Fall 2026 and am passionate about building the next generation of intelligent systems.
-
----
-
-<!-- ====================================================================== -->
-<!--                           RESEARCH INTERESTS                           -->
-<!-- ====================================================================== -->
-## Research Interests
-*   **Structured 3D Visual Reasoning:** Building interpretable models like Neural Module Networks (NMNs) for complex tasks such as 3D Visual Question Answering (VQA).
-*   **Physics-Informed 3D AI:** Integrating physical principles into deep learning models to enable realistic and predictive understanding of the 3D world.
-*   **Multimodal Learning:** Fusing vision, language, and other modalities to create robust and generalizable foundation models for 3D understanding.
-
----
-
-<!-- ====================================================================== -->
-<!--                              PUBLICATIONS                              -->
-<!-- ====================================================================== -->
-<h2 id="publications">Publications</h2>
-{% for post in site.publications reversed %}
-{% include card-entry.html %}
-{% endfor %}
-
----
-
-<!-- ====================================================================== -->
-<!--                          RESEARCH EXPERIENCE                           -->
-<!-- ====================================================================== -->
-<h2 id="research">Research Experience</h2>
-{% for post in site.research reversed %}
-{% include card-entry.html %}
-{% endfor %}
-
----
-
-<!-- ====================================================================== -->
-<!--                                EDUCATION                               -->
-<!-- ====================================================================== -->
-## Education
-*   **Southern University of Science and Technology (SUSTech)**, Shenzhen, China
-    *   *Bachelor of Science in Computer Science*, Sep. 2022 – Jun. 2026 (Expected)
-    *   GPA: 3.89/4.00 (Rank: 14/162)
-
-*   **National University of Singapore (NUS)**, Singapore
-    *   *Summer Workshop in Computer Vision*, May 2024 – Jul. 2024
-    *   Grade: A+
+<section id="contact" class="career-section" aria-labelledby="contact-title">
+  <h2 id="contact-title">Contact</h2>
+  <p>{{ site.career.target }}</p>
+  <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+</section>

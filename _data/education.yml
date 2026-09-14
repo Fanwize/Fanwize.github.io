@@ -1,0 +1,18 @@
+- institution: Carnegie Mellon University
+  location: Pittsburgh, PA
+  degree: Master of Science in Computer Vision
+  graduation: Expected Dec. 2027
+  coursework_label: Current Coursework
+  coursework:
+    - Advanced Computer Vision
+    - Visual Learning and Recognition
+    - Introduction to Robot Learning
+- institution: Southern University of Science and Technology (SUSTech)
+  location: Shenzhen, China
+  degree: Bachelor of Engineering in Computer Science and Technology
+  graduation: Jun. 2026
+  academic_record: "GPA: 3.89/4.00 · Rank: 13/167"
+  coursework_label: Selected Coursework
+  coursework:
+    - Natural Language Processing
+    - Intelligent Robotics

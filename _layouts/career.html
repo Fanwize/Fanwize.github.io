@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0, 2 }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="{{ '/assets/css/career.css' | relative_url }}">
+</head>
+<body class="career-page">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="career-header">
+    <nav class="career-nav" aria-label="Main navigation">
+      <a class="career-brand" href="{{ '/' | relative_url }}">{{ site.name }}</a>
+      <ul>
+        {% for link in site.data.navigation.main %}
+        <li><a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <main id="content" class="career-main" tabindex="-1">
+    {% unless page.home %}<h1>{{ page.title }}</h1>{% endunless %}
+    {{ content }}
+  </main>
+  <footer class="career-footer">
+    <span>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</span>
+    <span>Built with <a href="https://jekyllrb.com/">Jekyll</a> · <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a></span>
+  </footer>
+</body>
+</html>

@@ -1,10 +1,14 @@
 ---
-title: "Enhancing Spatial Reasoning in 3D Scene Understanding with LLMs"
-collection: research
-excerpt: "Investigated and implemented a pipeline to fuse textual spatial embeddings from a 3D grounding model (EDA) into an LLM (LEO), providing critical insights into mitigating spatial information loss in multimodal models."
-header:
-  teaser: "/images/spatial-llm-teaser.png"
-venue: "Advisor: Prof. Feng Zheng (Jan. 2024 – May 2024)"
-paperurl: "..." # 报告链接
-codeurl: "..." # 代码链接
+layout: career
+title: Spatial Reasoning in 3D Scene Understanding with LLMs
+permalink: /research/2024-spatial-llm/
+redirect_to: /projects/earlier/#spatial-reasoning
+sitemap: false
+earlier_anchor: spatial-reasoning
+earlier_order: 4
+project_title: Spatial Reasoning with LLMs
+project_period: Jan. – May 2024
+project_affiliation: Exploratory research project, SUSTech
+contribution: "I investigated a pipeline for integrating textual spatial embeddings from a 3D grounding model (EDA) into a language model (LEO), exploring how spatial information is retained in multimodal scene understanding."
+advisor: Prof. Feng Zheng
 ---

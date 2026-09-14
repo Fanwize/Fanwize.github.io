@@ -1,16 +1,7 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-
-# main links
 main:
-  - title: "Education"
-    url: /#education
-  - title: "Publications"
-    url: /#publications
-  - title: "Research"
+  - title: Research
     url: /#research
-  - title: "CV"
-    url: /files/CV_Qilin_Huang.pdf
+  - title: Education
+    url: /#education
+  - title: Resume
+    url: /files/cv_qilin_huang_26_fall.pdf

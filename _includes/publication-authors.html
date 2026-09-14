@@ -1,0 +1,2 @@
+<p class="publication-authors">{% for person in include.work.authors %}{% if person.name == site.name %}<strong>{{ person.name }}</strong>{% else %}{{ person.name }}{% endif %}{% if person.equal %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+{% if include.work.equal_contribution %}<p class="publication-note">* Equal contribution.</p>{% endif %}

@@ -1,10 +1,19 @@
 ---
-title: "Learning Variational Physical Representations from Visual Features"
-collection: research
-excerpt: "Upcoming research on more variable and expressive latent representations of physical properties, moving beyond deterministic point estimates to better capture material uncertainty inherent in visual data."
-header:
-  teaser: "/images/upenn-research-teaser.gif" # 你的概念图或占位图
-venue: "<b>[Upcoming]</b> Visiting Researcher @ GRASP Lab, UPenn (Fall 2025)"
-# 你可以把合作者放在这里，或者放在正文
+layout: career
+title: Research at the University of Pennsylvania
+permalink: /research/2025-upenn-physics/
 ---
-Under the supervision of Prof. Lingjie Liu, in collaboration with Long Le.
+
+{% assign work = site.publications | where: 'short_title', 'UniPixie' | first %}
+
+**{{ work.project_title }} · {{ work.project_period }}**
+
+{{ work.project_affiliation }} · {{ work.project_location }}
+
+{{ work.overview }}
+
+{{ work.contribution }}
+
+This research was conducted under the supervision of Prof. Lingjie Liu, in collaboration with Long Le and the other UniPixie co-authors. UniPixie was published at CVPR 2026 as a Highlight.
+
+[Read about UniPixie and my contributions]({{ '/publication/unipixie/' | relative_url }}).

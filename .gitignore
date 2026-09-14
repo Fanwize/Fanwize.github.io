@@ -1,13 +1,51 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ingore files created by npm
-node_modules
-package-lock.json
+# Only the site source and referenced assets are versioned.
+*
+!/.gitignore
+!/Gemfile
+!/Gemfile.lock
+!/LICENSE
+!/README.md
+!/_config.yml
+!/_data/
+!/_data/education.yml
+!/_data/navigation.yml
+!/_includes/
+!/_includes/earlier-project.html
+!/_includes/education.html
+!/_includes/publication-authors.html
+!/_includes/research-entry.html
+!/_includes/research-figure.html
+!/_includes/research-links.html
+!/_includes/resume-link.html
+!/_includes/seo.html
+!/_includes/technical-skills.html
+!/_layouts/
+!/_layouts/career.html
+!/_layouts/publication.html
+!/_pages/
+!/_pages/404.md
+!/_pages/about.md
+!/_pages/earlier-projects.md
+!/_pages/publications.html
+!/_pages/resume-redirect.md
+!/_pages/sitemap.md
+!/_portfolio/
+!/_portfolio/2024-cpu-gpu-matrix.md
+!/_portfolio/2024-nus-face-recognition.md
+!/_publications/
+!/_publications/2025-icann-hcnqa.md
+!/_publications/2026-cvpr-unipixie.md
+!/_research/
+!/_research/2024-spatial-llm.md
+!/_research/2025-nmn-research.md
+!/_research/2025-upenn-physics.md
+!/_sass/
+!/_sass/layout/
+!/_sass/layout/_career.scss
+!/assets/
+!/assets/css/
+!/assets/css/career.scss
+!/files/
+!/files/cv_qilin_huang_26_fall.pdf
+!/images/
+!/images/favicon.svg

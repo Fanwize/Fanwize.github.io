@@ -1,16 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'jekyll', '~> 3.10.0'
+gem 'kramdown-parser-gfm', '~> 1.1'
+gem 'webrick', '~> 1.8'
+gem 'eventmachine', '~> 1.2.7'
 
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-
-group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
-  gem 'jemoji'
-  gem 'webrick', '~> 1.8'
-end
-
-gem 'github-pages'
+gem 'jekyll-sitemap', '~> 1.4'
+gem 'jekyll-redirect-from', '~> 0.16'

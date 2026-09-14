@@ -1,0 +1,10 @@
+{% assign figure = include.work.figure %}
+{% if figure.path and figure.alt and figure.width and figure.height %}
+  {% assign figure_files = site.static_files | where: 'path', figure.path %}
+  {% if figure_files.size > 0 %}
+  <figure class="research-figure">
+    <img src="{{ figure.path | relative_url }}" alt="{{ figure.alt | escape }}" width="{{ figure.width }}" height="{{ figure.height }}" loading="lazy" decoding="async">
+    {% if figure.caption %}<figcaption>{{ figure.caption | escape }}{% if figure.source_url %} <a href="{{ figure.source_url | escape }}">Source</a>{% endif %}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,104 @@
+/* Career pages deliberately use a standalone stylesheet: no fixed sidebar,
+   theme grid offsets, animation, or JavaScript-dependent navigation. */
+* { box-sizing: border-box; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body.career-page {
+  margin: 0;
+  background: #fff;
+  color: #1f2937;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+a { color: #1d4ed8; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #173ba6; }
+a:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 5px; border-radius: 2px; }
+p { margin: 0 0 1rem; }
+h1, h2, h3 { color: #111827; font-weight: 650; line-height: 1.3; overflow-wrap: anywhere; }
+h1 { font-size: 2.25rem; letter-spacing: -0.035em; margin: 0 0 1.25rem; }
+h2 { font-size: 1.5rem; margin: 2.5rem 0 1.25rem; letter-spacing: -0.02em; }
+h3 { font-size: 1.2rem; margin: 0 0 0.5rem; }
+.career-nav, .career-main, .career-footer { width: 100%; max-width: 1000px; margin-inline: auto; padding-inline: 32px; }
+.career-header { border-bottom: 1px solid #e5e7eb; }
+.career-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 28px; padding-block: 16px; }
+.career-nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; color: #374151; }
+.career-nav a:hover, .career-nav a[aria-current="page"] { color: #1d4ed8; text-decoration: underline; }
+.career-brand { font-size: 1.0625rem; font-weight: 650; white-space: nowrap; }
+.career-nav ul { display: flex; flex-wrap: wrap; gap: 24px; list-style: none; margin: 0; padding: 0; }
+.career-main { padding-block: 48px 64px; overflow-wrap: anywhere; min-height: 65vh; }
+.profile { max-width: 78ch; }
+.profile h1 { margin-bottom: 10px; }
+.profile-affiliation { font-size: 1.0625rem; font-weight: 550; margin-bottom: 4px; }
+.profile-graduation { color: #4b5563; font-size: 0.9375rem; margin-bottom: 24px; }
+.profile-intro { max-width: 75ch; }
+.internship-target { font-weight: 650; margin-top: 20px; }
+.profile-links, .resource-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 24px; }
+.profile-links a, .resource-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.primary-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 18px; background: #1d4ed8; color: #fff; border-radius: 4px; font-weight: 600; text-decoration: none; }
+.primary-link:hover { background: #173ba6; color: #fff; }
+.career-section { margin-top: 48px; }
+.career-section > h2 { margin: 0; padding-bottom: 14px; border-bottom: 1px solid #e5e7eb; }
+.research-entry { padding-block: 24px; border-bottom: 1px solid #e5e7eb; }
+.research-entry p { max-width: 78ch; }
+.research-heading h3 { max-width: 70ch; }
+.research-heading h3 a, .publication-entry h2 a { color: #111827; text-decoration: none; }
+.research-heading h3 a:hover, .publication-entry h2 a:hover { color: #1d4ed8; text-decoration: underline; }
+.research-meta { color: #4b5563; font-size: 0.9375rem; margin-bottom: 16px; }
+.resource-links { font-size: 0.9375rem; font-weight: 550; }
+.section-more { margin: 20px 0 0; font-size: 0.9375rem; }
+.section-more a { display: inline-block; padding-block: 6px; }
+.education-entry { margin-top: 24px; }
+.education-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+.education-heading h3 { font-size: 1.0625rem; margin-bottom: 4px; }
+.education-heading span { color: #4b5563; font-size: 0.9375rem; flex-shrink: 0; }
+.education-entry p { margin-bottom: 0; }
+.earlier-projects { max-width: 78ch; margin-top: 28px; }
+.earlier-project { border-top: 1px solid #e5e7eb; padding-block: 28px; scroll-margin-top: 24px; }
+.earlier-project-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+.earlier-project-heading h2 { margin: 0; font-size: 1.25rem; }
+.earlier-project-period { flex-shrink: 0; margin: 0; color: #4b5563; font-size: 0.9375rem; }
+.earlier-project > .research-meta { margin: 8px 0 16px; }
+.earlier-project-advisor { color: #4b5563; font-size: 0.9375rem; }
+.earlier-project-body > :last-child { margin-bottom: 0; }
+.career-section > h2 + p { margin-top: 20px; }
+#contact > h2 { margin-bottom: 20px; }
+.publication-entry { padding-block: 8px 24px; border-bottom: 1px solid #e5e7eb; }
+.publication-entry h2 { font-size: 1.25rem; margin-top: 24px; }
+.publication-authors { font-size: 0.9375rem; margin-bottom: 8px; }
+.publication-note { color: #4b5563; font-size: 0.875rem; margin-bottom: 8px; }
+.publication-body { max-width: 78ch; margin-top: 24px; }
+.career-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; border-top: 1px solid #e5e7eb; padding-block: 24px; font-size: 0.8125rem; color: #4b5563; }
+.career-footer a { color: inherit; }
+.anchor-alias { display: block; }
+.skip-link { position: absolute; top: -100px; left: 16px; padding: 10px 16px; background: #fff; z-index: 5; }
+.skip-link:focus { top: 8px; }
+@media (max-width: 640px) {
+  .career-nav, .career-main, .career-footer { padding-inline: 20px; }
+  .career-nav { flex-wrap: wrap; padding-block: 10px; gap: 0 20px; }
+  .career-nav ul { gap: 20px; }
+  .career-main { padding-block: 32px 40px; }
+  h1 { font-size: 1.875rem; }
+  h2 { font-size: 1.375rem; }
+  h3 { font-size: 1.125rem; }
+  .career-section { margin-top: 36px; }
+  .education-heading { display: block; }
+  .education-heading span { display: block; margin-bottom: 4px; }
+  .earlier-project-heading { display: block; }
+  .earlier-project-period { margin-top: 4px; }
+  .profile-links { gap: 8px 20px; }
+}
+@media (max-width: 359px) {
+  .career-nav, .career-main, .career-footer { padding-inline: 16px; }
+}
+@media print {
+  .career-header, .career-footer, .skip-link { display: none; }
+  .career-main { width: 100%; padding: 0; }
+  .research-entry, .education-entry, .earlier-project { break-inside: avoid; }
+  a { color: inherit; }
+  .primary-link { background: none; color: #111827; border: 1px solid #4b5563; }
+}
+
+/* Optional static figures; no media is rendered until its metadata and file exist. */
+.research-figure { margin: 20px 0; max-width: 640px; }
+.research-figure img { display: block; max-width: 100%; height: auto; border-radius: 4px; }
+.research-figure figcaption { margin-top: 8px; font-size: 0.875rem; color: #4b5563; }

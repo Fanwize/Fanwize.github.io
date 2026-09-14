@@ -1,0 +1,18 @@
+---
+layout: career
+---
+<p class="research-meta">{{ page.venue }} {{ page.year }}{% if page.recognition %} · {{ page.recognition }}{% endif %}{% if page.author_role %} · {{ page.author_role }}{% endif %}</p>
+{% if page.project_period %}<p class="research-meta">Research period: {{ page.project_period }}<br>{{ page.project_affiliation }} · {{ page.project_location }}</p>{% endif %}
+{% include publication-authors.html work=page %}
+{% include research-links.html work=page %}
+<div class="publication-body">
+  <h2>Overview</h2>
+  <p>{{ page.overview }}</p>
+  {% include research-figure.html work=page %}
+  <h2>My contribution</h2>
+  <p>{{ page.contribution }}</p>
+  <h2>Paper result</h2>
+  <p>{{ page.result }}</p>
+  {{ content }}
+</div>
+<p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>

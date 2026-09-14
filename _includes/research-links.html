@@ -1,0 +1,6 @@
+{% assign work = include.work %}
+<div class="resource-links" aria-label="Resources for {{ work.short_title | default: work.title | escape }}">
+  {% if work.paperurl and work.paperurl != '' and work.paperurl != '...' %}<a href="{{ work.paperurl | relative_url }}">Paper</a>{% endif %}
+  {% if work.projectpage and work.projectpage != '' and work.projectpage != '...' %}<a href="{{ work.projectpage | relative_url }}">Project</a>{% endif %}
+  {% if work.codeurl and work.codeurl != '' and work.codeurl != '...' %}<a href="{{ work.codeurl | relative_url }}">Code</a>{% endif %}
+</div>

@@ -1,0 +1,13 @@
+{% assign work = include.work %}
+<article id="{{ work.earlier_anchor }}" class="earlier-project" aria-labelledby="{{ work.earlier_anchor }}-title">
+  <div class="earlier-project-heading">
+    <h2 id="{{ work.earlier_anchor }}-title">{{ work.project_title }}</h2>
+    <p class="earlier-project-period">{{ work.project_period }}</p>
+  </div>
+  <p class="research-meta">{{ work.project_affiliation }}{% if work.project_location %} · {{ work.project_location }}{% endif %}</p>
+  <div class="earlier-project-body">
+    <p>{{ work.contribution }}</p>
+    {% if work.team_result %}<p><strong>Team result.</strong> {{ work.team_result }}</p>{% endif %}
+    {% if work.advisor %}<p class="earlier-project-advisor">Advisor: {{ work.advisor }}.</p>{% endif %}
+  </div>
+</article>
