@@ -21,7 +21,6 @@
 !/_includes/technical-skills.html
 !/_layouts/
 !/_layouts/career.html
-!/_layouts/publication.html
 !/_pages/
 !/_pages/404.md
 !/_pages/about.md
@@ -32,13 +31,13 @@
 !/_portfolio/
 !/_portfolio/2024-cpu-gpu-matrix.md
 !/_portfolio/2024-nus-face-recognition.md
+!/_portfolio/2026-orienternet-localization.md
 !/_publications/
 !/_publications/2025-icann-hcnqa.md
 !/_publications/2026-cvpr-unipixie.md
 !/_research/
 !/_research/2024-spatial-llm.md
 !/_research/2025-nmn-research.md
-!/_research/2025-upenn-physics.md
 !/_sass/
 !/_sass/layout/
 !/_sass/layout/_career.scss
@@ -49,3 +48,5 @@
 !/files/cv_qilin_huang_26_fall.pdf
 !/images/
 !/images/favicon.svg
+!/images/hcnqa-teaser.gif
+!/images/unipixie-teaser.png

@@ -25,7 +25,7 @@ redirect_from:
   <h2 id="research-title">Selected Research</h2>
   {% assign selected = site.publications | where: 'selected', true | sort: 'selected_order' %}
   {% for work in selected %}{% include research-entry.html work=work %}{% endfor %}
-  <p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications</a> · <a href="{{ '/projects/earlier/' | relative_url }}">Earlier projects</a></p>
+  <p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications</a> · <a href="{{ '/projects/earlier/' | relative_url }}">Other Projects</a></p>
 </section>
 
 {% if site.career.skills.size > 0 %}

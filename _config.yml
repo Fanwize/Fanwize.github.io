@@ -38,6 +38,8 @@ future: false
 
 include:
   - _pages
+  - hcnqa-teaser.gif
+  - unipixie-teaser.png
   - favicon.svg
   - cv_qilin_huang_26_fall.pdf
 exclude:
@@ -80,20 +82,13 @@ kramdown:
   syntax_highlighter: rouge
 collections:
   publications:
-    output: true
-    permalink: /publication/:path/
+    output: false
   research:
     output: true
     permalink: /research/:path/
   portfolio:
     output: true
     permalink: /portfolio/:path/
-defaults:
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: publication
 sass:
   sass_dir: _sass
   style: compressed

@@ -1,12 +1,16 @@
 {% assign work = include.work %}
-<article class="research-entry" aria-labelledby="{{ work.short_title | slugify }}-title">
+{% capture research_media %}{% include research-figure.html work=work %}{% endcapture %}
+{% assign research_media = research_media | strip %}
+<article class="research-entry{% if research_media != empty %} research-entry-with-figure{% endif %}" aria-labelledby="{{ work.short_title | slugify }}-title">
+  <div class="research-copy">
   <div class="research-heading">
-    <h3 id="{{ work.short_title | slugify }}-title"><a href="{{ work.url | relative_url }}">{{ work.title }}</a></h3>
+    <h3 id="{{ work.short_title | slugify }}-title">{{ work.title }}</h3>
     <p class="research-meta">{{ work.venue }} {{ work.year }}{% if work.recognition %} · {{ work.recognition }}{% endif %}{% if work.author_role %} · {{ work.author_role }}{% endif %}</p>
   </div>
   <p>{{ work.overview }}</p>
   <p><strong>My contribution.</strong> {{ work.contribution }}</p>
   <p><strong>Paper result.</strong> {{ work.result }}</p>
-  {% include research-figure.html work=work %}
   {% include research-links.html work=work %}
+  </div>
+  {{ research_media }}
 </article>

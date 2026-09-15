@@ -66,7 +66,6 @@ h3 { font-size: 1.2rem; margin: 0 0 0.5rem; }
 .publication-entry h2 { font-size: 1.25rem; margin-top: 24px; }
 .publication-authors { font-size: 0.9375rem; margin-bottom: 8px; }
 .publication-note { color: #4b5563; font-size: 0.875rem; margin-bottom: 8px; }
-.publication-body { max-width: 78ch; margin-top: 24px; }
 .career-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; border-top: 1px solid #e5e7eb; padding-block: 24px; font-size: 0.8125rem; color: #4b5563; }
 .career-footer a { color: inherit; }
 .anchor-alias { display: block; }
@@ -98,7 +97,19 @@ h3 { font-size: 1.2rem; margin: 0 0 0.5rem; }
   .primary-link { background: none; color: #111827; border: 1px solid #4b5563; }
 }
 
-/* Optional static figures; no media is rendered until its metadata and file exist. */
-.research-figure { margin: 20px 0; max-width: 640px; }
-.research-figure img { display: block; max-width: 100%; height: auto; border-radius: 4px; }
+/* Research media retain their original proportions at a shared responsive width. */
+.research-copy { min-width: 0; }
+.research-figure { width: 100%; max-width: 280px; margin: 16px 0 0; }
+.research-figure img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 4px; }
 .research-figure figcaption { margin-top: 8px; font-size: 0.875rem; color: #4b5563; }
+
+@media (min-width: 800px) {
+  .research-entry-with-figure {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    column-gap: 28px;
+    align-items: start;
+  }
+  .research-entry-with-figure .research-copy { grid-column: 2; grid-row: 1; }
+  .research-entry-with-figure .research-figure { grid-column: 1; grid-row: 1; max-width: none; margin: 0; }
+}

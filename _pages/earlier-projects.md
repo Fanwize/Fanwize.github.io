@@ -1,13 +1,13 @@
 ---
 layout: career
-title: Earlier Projects
-description: "Earlier research and coursework by Qilin Huang in 3D visual reasoning, visual computing, and GPU programming."
+title: Other Projects
+description: "Selected research and course projects in map-based visual localization, 3D visual reasoning, face recognition, and CPU/GPU computing."
 permalink: /projects/earlier/
 redirect_from:
   - /portfolio/
 ---
 
-Earlier research and coursework in 3D visual reasoning, visual computing, and GPU programming.
+Selected research and course projects in map-based visual localization, 3D visual reasoning, face recognition, and CPU/GPU computing.
 
 <div class="earlier-projects">
   {% assign earlier_projects = site.research | concat: site.portfolio | where_exp: 'work', 'work.earlier_order != nil' | sort: 'earlier_order' %}

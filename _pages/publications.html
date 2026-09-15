@@ -6,7 +6,7 @@ permalink: /publications/
 {% assign publications = site.publications | sort: 'year' | reverse %}
 {% for work in publications %}
 <article class="publication-entry">
-  <h2><a href="{{ work.url | relative_url }}">{{ work.title }}</a></h2>
+  <h2>{{ work.title }}</h2>
   {% include publication-authors.html work=work %}
   <p class="research-meta">{{ work.venue }} {{ work.year }}{% if work.recognition %} · {{ work.recognition }}{% endif %}</p>
   {% include research-links.html work=work %}
