@@ -2,7 +2,7 @@ locale: en-US
 title: Qilin Huang
 title_separator: "|"
 name: &name Qilin Huang
-description: "Qilin Huang, a Computer Vision master's student at Carnegie Mellon University, works on 3D physics and visual reasoning and seeks Summer 2027 CV/ML engineering and applied ML internships."
+description: "Qilin Huang, a Computer Vision master's student at Carnegie Mellon University, works on 3D physics and visual reasoning and seeks Summer 2027 Computer Vision and Machine Learning internships."
 url: https://fanwize.github.io
 baseurl: ""
 repository: Fanwize/Fanwize.github.io
@@ -20,9 +20,9 @@ career:
   degree: M.S. in Computer Vision
   institution: *affiliation
   graduation: December 2027
-  target: Seeking Summer 2027 internships in CV/ML engineering and applied ML.
+  target: Seeking Summer 2027 internships in Computer Vision and Machine Learning.
   resume:
-    path: /files/cv_qilin_huang_26_fall.pdf
+    path: /files/cv_qilin_huang_26_fall-0915.pdf
   skills:
     - label: Programming
       items: [Python, Java, C/C++, SQL]
@@ -45,7 +45,7 @@ include:
   - unipixie-teaser-960.webp
   - social-preview.png
   - favicon.svg
-  - cv_qilin_huang_26_fall.pdf
+  - cv_qilin_huang_26_fall-0915.pdf
   - assets/fonts/inter-variable.woff2
   - assets/fonts/inter-LICENSE.txt
 exclude:

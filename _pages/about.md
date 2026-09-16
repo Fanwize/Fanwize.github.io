@@ -2,7 +2,7 @@
 permalink: /
 layout: career
 home: true
-description: "Qilin Huang, CMU Computer Vision master's student. Controllable 3D physics and visual reasoning. Seeking Summer 2027 CV/ML engineering and applied ML internships."
+description: "Qilin Huang, CMU Computer Vision master's student. Controllable 3D physics and visual reasoning. Seeking Summer 2027 Computer Vision and Machine Learning internships."
 redirect_from:
   - /about/
   - /about.html
