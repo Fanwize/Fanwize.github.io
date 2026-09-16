@@ -2,7 +2,7 @@
 permalink: /
 layout: career
 home: true
-description: "Qilin Huang, CMU Computer Vision master's student. Controllable 3D physics and 3D visual question answering. Seeking Summer 2027 CV/ML internships."
+description: "Qilin Huang, CMU Computer Vision master's student. Controllable 3D physics and visual reasoning. Seeking Summer 2027 CV/ML engineering and applied ML internships."
 redirect_from:
   - /about/
   - /about.html
@@ -11,7 +11,7 @@ redirect_from:
   <h1 id="profile-title">{{ site.name }}</h1>
   <p class="profile-affiliation">{{ site.career.degree }} · {{ site.career.institution }}</p>
   <p class="profile-graduation">Expected graduation: {{ site.career.graduation }} · {{ site.author.location }}</p>
-  <p class="profile-intro">I am a master's student in Computer Vision at Carnegie Mellon University. My research includes controllable 3D physics and 3D visual question answering. I am a co-first author of <a href="#unipixie-title">UniPixie</a> (CVPR 2026 Highlight) and a co-author of <a href="#hcnqa-title">HCNQA</a> (ICANN 2025).</p>
+  <p class="profile-intro">My work spans controllable 3D physics and 3D visual question answering. I developed the conditional flow-matching model and simulation interfaces for <a href="#unipixie-title">UniPixie</a> (CVPR 2026 Highlight, first author), and a neuro-symbolic framework for <a href="{{ '/projects/earlier/#nmn-3d-vqa' | relative_url }}">3D visual reasoning</a>.</p>
   <p class="internship-target">{{ site.career.target }}</p>
   <div class="profile-links">
     {% include resume-link.html primary=true %}

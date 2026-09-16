@@ -8,7 +8,9 @@ earlier_anchor: nmn-3d-vqa
 earlier_order: 1
 project_title: Neural Module Network for 3D Visual Question Answering
 project_period: Feb. – Jun. 2025
-project_affiliation: Faculty-supervised Independent Research · Southern University of Science and Technology
-contribution: "I proposed and implemented a 3D visual question answering prototype that used a frozen LLM to translate natural-language questions into executable programs. I integrated task-specific 3D modules to execute these programs and evaluated the approach on ScanQA."
+project_affiliation: Research Project · Southern University of Science and Technology
+project_location: Shenzhen, China
+contribution: "I designed and implemented a neuro-symbolic 3D-VQA framework using a frozen LLM to synthesize executable programs. I developed transformer-based neural modules for filtering, spatial relations, logic, and attribute queries."
+result: "On ScanQA, the framework matched 3D-VisTA on EM@1 while improving METEOR by 6.8 points. Ablations showed EM@1 gains of 1.9 points over the mask-only variant and 0.7 points over the 1-layer variant."
 advisor: Prof. Feng Zheng
 ---

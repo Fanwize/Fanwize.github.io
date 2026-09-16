@@ -1,6 +1,7 @@
 ---
 layout: career
 title: Publications
+description: "Publications by Qilin Huang on controllable 3D physics and 3D visual question answering, with paper, project, and code links."
 permalink: /publications/
 ---
 {% assign publications = site.publications | sort: 'year' | reverse %}
@@ -8,7 +9,7 @@ permalink: /publications/
 <article class="publication-entry">
   <h2>{{ work.title }}</h2>
   {% include publication-authors.html work=work %}
-  <p class="research-meta">{{ work.venue }} {{ work.year }}{% if work.recognition %} · {{ work.recognition }}{% endif %}</p>
+  <p class="research-meta">{{ work.venue }} {{ work.year }}{% if work.recognition %} · <strong>{{ work.recognition }}</strong>{% endif %}{% if work.author_role %} · <strong>{{ work.author_role }}</strong>{% endif %}</p>
   {% include research-links.html work=work %}
 </article>
 {% endfor %}

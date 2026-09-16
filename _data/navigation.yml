@@ -1,6 +1,8 @@
 main:
   - title: Research
     url: /#research
+  - title: Other Projects
+    url: /projects/earlier/
   - title: Education
     url: /#education
   - title: Resume

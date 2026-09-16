@@ -8,7 +8,8 @@ earlier_anchor: face-recognition
 earlier_order: 2
 project_title: Face Recognition under Occlusion
 project_period: May – Jul. 2024
-project_affiliation: Summer Workshop Team Project · National University of Singapore
-contribution: "I implemented face alignment, cropping, and feature extraction for a team project on masked and unmasked face recognition. For enrolled-versus-unknown classification, I compared preprocessing choices and feature representations, including HOG and VGG-based features with PCA, and evaluated masked and unmasked images separately."
+project_affiliation: Visual Computing Course Project · National University of Singapore
+project_location: Singapore
+contribution: "I co-proposed local-feature selection for masked face recognition using only unmasked training data. I implemented alignment and regional feature extraction, and compared HOG and VGG-based features."
 team_result: "Third prize in the course project competition."
 ---

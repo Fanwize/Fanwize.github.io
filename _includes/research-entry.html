@@ -2,15 +2,16 @@
 {% capture research_media %}{% include research-figure.html work=work %}{% endcapture %}
 {% assign research_media = research_media | strip %}
 <article class="research-entry{% if research_media != empty %} research-entry-with-figure{% endif %}" aria-labelledby="{{ work.short_title | slugify }}-title">
-  <div class="research-copy">
   <div class="research-heading">
     <h3 id="{{ work.short_title | slugify }}-title">{{ work.title }}</h3>
-    <p class="research-meta">{{ work.venue }} {{ work.year }}{% if work.recognition %} · {{ work.recognition }}{% endif %}{% if work.author_role %} · {{ work.author_role }}{% endif %}</p>
-  </div>
-  <p>{{ work.overview }}</p>
-  <p><strong>My contribution.</strong> {{ work.contribution }}</p>
-  <p><strong>Paper result.</strong> {{ work.result }}</p>
-  {% include research-links.html work=work %}
+    <p class="research-meta">{{ work.venue }} {{ work.year }}{% if work.recognition %} · <strong>{{ work.recognition }}</strong>{% endif %}{% if work.author_role %} · <strong>{{ work.author_role }}</strong>{% endif %}</p>
+    {% if work.research_context %}<p class="research-context">{{ work.research_context }}</p>{% endif %}
   </div>
   {{ research_media }}
+  <div class="research-copy">
+  <p>{{ work.overview }}</p>
+  <p><strong>My contribution.</strong> {{ work.contribution }}</p>
+  {% if work.result %}<p><strong>Evaluation.</strong> {{ work.result }}</p>{% endif %}
+  {% include research-links.html work=work %}
+  </div>
 </article>

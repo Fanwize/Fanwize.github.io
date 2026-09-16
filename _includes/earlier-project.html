@@ -7,6 +7,7 @@
   <p class="research-meta">{{ work.project_affiliation }}{% if work.project_location %} · {{ work.project_location }}{% endif %}</p>
   <div class="earlier-project-body">
     <p>{{ work.contribution }}</p>
+    {% if work.result %}<p><strong>Evaluation.</strong> {{ work.result }}</p>{% endif %}
     {% if work.team_result %}<p><strong>Team award:</strong> {{ work.team_result }}</p>{% endif %}
     {% if work.advisor %}<p class="earlier-project-advisor"><strong>Advisor:</strong> {{ work.advisor }}.</p>{% endif %}
   </div>

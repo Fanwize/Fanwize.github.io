@@ -6,6 +6,7 @@ category: conferences
 year: 2025
 preprint_date: 2025-07-02
 venue: ICANN
+author_role: Co-Author
 selected: true
 selected_order: 2
 authors:
@@ -15,15 +16,17 @@ authors:
   - name: Fangjing Wang
   - name: Yanfu Zhang
   - name: Feng Zheng
-overview: "HCNQA improves 3D visual question answering by guiding a vision-language model from scene-level context toward the objects relevant to a question."
-contribution: "I reproduced baseline experiments on ScanQA for comparative evaluation and authored the VQA related-work section."
-result: "On ScanQA's test-with-objects split, HCNQA improved EM@1 from 25.94% to 27.01% over 3D-VisTA (+1.07 percentage points)."
+research_context: "Research Project · Southern University of Science and Technology · Jun.–Sep. 2024 · Shenzhen, China"
+overview: "HCNQA guides a vision-language model from scene context toward the objects relevant to a question, improving 3D visual question answering."
+contribution: "I evaluated the 5 × 5 supervision grid in a 3 × 3, 5 × 5, and 7 × 7 comparison, informing the final coarse-grounding design. I visually audited 60 hierarchical-supervision samples across 6 ScanQA scenes, identifying target annotation and grid-assignment errors, and reproduced ScanQA training and test-set evaluation to establish reference results for HCNQA."
 description: "Hierarchical supervision for 3D visual question answering. ICANN 2025; co-authored by Qilin Huang."
 paperurl: https://arxiv.org/abs/2507.01800
 codeurl: https://github.com/JianuoZhu/HCNQA
 figure:
-  path: /images/hcnqa-teaser.gif
-  alt: "HCNQA animated overview of hierarchical concentration narrowing for 3D visual question answering."
+  path: /images/hcnqa-poster.webp
+  video: /images/hcnqa-teaser.mp4
+  alt: "HCNQA diagram animation showing how a model narrows scene context to question-relevant objects; no audio."
+  caption: "Scene context narrows to the objects needed to answer a question."
   width: 800
   height: 450
 ---
